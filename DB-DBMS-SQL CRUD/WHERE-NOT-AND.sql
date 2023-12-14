@@ -1,7 +1,8 @@
 -- Конспект занятия
 -- https://western-appeal-39b.notion.site/GenTech-1-Dec-6-2023-67a3b7ee27574934a879c6f51c051b2d?pvs=4
 -- https://support.microsoft.com/ru-ru/office/предикаты-all-distinct-distinctrow-и-top-24f2a47d-a803-4c7c-8e81-756fe298ce57
-
+-- повторение
+-- https://western-appeal-39b.notion.site/GenTech-Summary-Dec-11-2023-b46098a7a8484e28a0c0320f4744bde9 + Git/GitHub
 
 -- SELECT  вывод
 
