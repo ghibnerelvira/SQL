@@ -43,7 +43,6 @@ WHERE
     has_child LIKE 'N'; -- has_child is null / has_child = 0
 
 
-
 -- Найти первых трех сотрудников, чьи имена начинаются на A
 SELECT * FROM Staff
 WHERE 
@@ -92,3 +91,4 @@ WHERE
 SELECT * FROM Staff
 WHERE 
     username LIKE '_____';
+    

@@ -120,6 +120,7 @@
 
 
 
+
 -- LIMIT 
 -- строница в кноце скролла 1,2,3..
 -- SELECT * FROM Products

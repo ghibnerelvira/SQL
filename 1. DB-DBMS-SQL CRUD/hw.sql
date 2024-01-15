@@ -87,6 +87,7 @@ WHERE
     AND
     NOT Country = "USA";
 
+
 --      5. Вывести страну, город и адрес всех поставщиков, кроме тех, что из Japan и Brazil
 SELECT
 	Country,
