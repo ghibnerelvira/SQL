@@ -1,0 +1,28 @@
+------ Задача. Создать таблицу транзакций txs ------
+CREATE TABLE if not exists txs (
+   id int primary key auto_increment,
+   created_at timestamp default current_timestamp,
+   amount float not null check(amount > 0),
+   is_approved bool default false,
+   sender_account_id int not null,
+   recipient_account_id int not null,
+
+   foreign key (sender_account_id) references accounts(id),
+   foreign key (recipient_account_id) references accounts(id)
+)
+
+
+---- 2 Вариант -----
+create table if not exists txs (
+    transaction_id int primary key auto_increment, 
+    from_account_id int,
+    to_account_id int,
+    amount double,
+    transaction_date timestamp default current_timestamp,
+    comment varchar(128) not null
+    foreign key (from_account_id) references accounts(id),
+    foreign key (to_account_id) references accounts(id)
+);
+
+------ Вариант создания новой ветки -------
+git checkout -b новая_ветка main

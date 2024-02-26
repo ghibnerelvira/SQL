@@ -27,7 +27,7 @@ INSERT INTO users (fullname, country) VALUES ('Max Musterman', 'Germany'),
                                              ('John Smith', 'UK'),
                                              ('Alias Gergano', 'Spain');
 
--- Создать таблицу комментариев (comments) с использованием механизма валидации данных в SQL
+-- Создать таблицу комментариев (comments) с использованием механизма валидации данных в SQL (DDL)
 create table if not exists comments (
     id int primary key auto_increment,
     user_id int,
@@ -39,7 +39,7 @@ create table if not exists comments (
     foreign key (user_id) references users(id)
 );
 
--- Добавить в таблицу комментариев несколько записей
+-- Добавить в таблицу комментариев несколько записей (CRUD)
 INSERT INTO comments (user_id, fullname, country, comment_text)
 VALUES 
     (1, 'Max Musterman', 'Germany', 'Отличная статья!'),
@@ -49,7 +49,7 @@ VALUES
 
 
 
--- Вывести ко-во комментариев на каждый трек (в упорядоченном виде)
+-- Вывести ко-во комментариев на каждый трек (в упорядоченном виде) (COUNT())
 SELECT 
     users.id, 
     users.fullname, 
